@@ -22,7 +22,7 @@ app.get('/', (req, res) => {
 </head>
 <body>
   <div class="container">
-    <h1>Sending html</h1>
+    <h1>Nodemon is a life saver</h1>
     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse architecto placeat nulla odio eos deserunt cumque quam mollitia itaque dicta pariatur, modi molestias numquam error nobis laudantium voluptatum voluptatibus est tempora ad? Ratione minus saepe ipsam maiores animi quis. Reiciendis nostrum ex officiis ipsum dolore aliquam, soluta ut laboriosam tempora itaque repellat qui assumenda temporibus quasi, totam et error sed porro minus debitis quas minima nemo hic? Temporibus voluptatem fugiat eaque, saepe veniam, deserunt necessitatibus explicabo dolores sunt voluptatum dolorum pariatur reiciendis error quaerat ea vel sint maxime itaque officia minus culpa totam! Dolorem, ab in labore expedita at maiores.</p>
   </div>
 </body>
