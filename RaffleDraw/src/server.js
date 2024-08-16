@@ -9,6 +9,17 @@ app.get("/health", (_req, res) => {
   res.status(200).json({ message: 'Success' });
 });
 
+/**
+ * this is a test function
+ * @param {string} name 
+ * @return {boolean}
+ */
+
+function testFunc(name) {
+ name 
+}
+
+
 app.use((_req, _res, next) => {
   const error = new Error('Resource Not Found');
   error.status = 404;
