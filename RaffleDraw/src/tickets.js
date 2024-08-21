@@ -94,8 +94,10 @@ class TicketCollection {
 
   updateById(ticketId, ticketBody) {
     const ticket = this.findById(ticketId);
-    ticket.username = ticketBody.username ?? ticket.username;
-    ticket.price = ticketBody.price ?? ticket.price;
+    if (ticket) {
+      ticket.username = ticketBody.username ?? ticket.username;
+      ticket.price = ticketBody.price ?? ticket.price;
+    }
     return ticket;
   }
 
@@ -179,5 +181,5 @@ class TicketCollection {
   }
 }
 
-const collection = new TicketCollection();
-module.exports = collection;
+const ticketCollection = new TicketCollection();
+module.exports = ticketCollection;
