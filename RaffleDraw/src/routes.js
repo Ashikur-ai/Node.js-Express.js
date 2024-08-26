@@ -1,11 +1,11 @@
 const router = require('express').Router();
-const { sellBulkTicket, sellSingleTicket, findAll, findById, findByUsername } = require('./controllers');
+const { sellBulkTicket, sellSingleTicket, findAll, findById, findByUsername, updateById, updateByUsername, deleteById, deleteByUsername } = require('./controllers');
 
 
 
-router.route('/t/:id').get(findById).put().delete();
+router.route('/t/:id').get(findById).put(updateById).delete(deleteById);
 
-router.route('/u/:username').get(findByUsername).put().delete();
+router.route('/u/:username').get(findByUsername).put(updateByUsername).delete(deleteByUsername);
 
 router.post('/bulk', sellBulkTicket);
 router.get('/draw');
